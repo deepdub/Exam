@@ -1,0 +1,22 @@
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	
+	&__item {
+		padding: 0 16px;
+	}
+	
+	&__link {
+    font-size: $menu-fs;
+    font-family: $main-font-family;
+    color: $black-color;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		
+	}
+}
