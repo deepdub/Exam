@@ -3,7 +3,8 @@ Global settings
 -------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -441,6 +442,7 @@ variables
 -------------------------------------------------*/
 /*GLobal variables*/
 /*menu*/
+/*images*/
 /*-------------------------------------------------
 typography
 -------------------------------------------------*/
@@ -450,9 +452,12 @@ Header
 /*header*/
 .header {
   padding-top: 50px;
-  width: 1200px;
+  width: 1350px;
   height: 960px;
-  background: url(img/hero-img.png); }
+  background-image: url(../../../img/hero-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .header__row {
     display: flex;
     flex-direction: row;
@@ -463,6 +468,7 @@ Header
 menu
 -------------------------------------------------*/
 .menu {
+  width: 800px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -474,9 +480,232 @@ menu
   .menu__link {
     font-size: 16px;
     font-family: "Lato", sans-serif;
-    color: #222222;
+    color: #ffffff;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase; }
+
+/*-------------------------------------------------
+header-content
+-------------------------------------------------*/
+.header__content {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 500px; }
+  .header__content__title {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  .header__content__subtitle {
+    font-size: 22px;
+    word-spacing: 3px;
+    color: #ffffff; }
+  .header__content__circle {
+    padding-top: 80px; }
+
+/*-------------------------------------------------
+first-block
+-------------------------------------------------*/
+.f-block {
+  width: 1350px;
+  height: 600px;
+  font-family: "Lato", sans-serif; }
+  .f-block__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px; }
+  .f-block .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center; }
+    .f-block .flex-box p {
+      letter-spacing: 1px;
+      color: #222222; }
+    .f-block .flex-box__flex__elements {
+      transform: scale(1); }
+      .f-block .flex-box__flex__elements:hover {
+        transform: scale(1.1); }
+
+/*-------------------------------------------------
+second-block
+-------------------------------------------------*/
+.s-block {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-image: url(../../../img/2-layers.png); }
+  .s-block .container {
+    display: flex; }
+    .s-block .container .container__wrapper {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      position: relative;
+      margin-left: 50px; }
+      .s-block .container .container__wrapper h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: #ffffff; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #ffffff; }
+
+.link {
+  position: absolute;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  top: 250px; }
+
+.link:hover {
+  color: gold; }
+
+.s-block__image {
+  display: flex;
+  padding-top: 75px; }
+
+/*-------------------------------------------------
+third-block
+-------------------------------------------------*/
+.content {
+  width: auto;
+  height: 750px; }
+  .content h1 {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px; }
+
+.flex-box {
+  display: flex;
+  justify-content: space-around; }
+
+.button {
+  width: 360px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+  transform: scale(1); }
+  .button .add {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase; }
+
+.button:hover {
+  background-color: gold;
+  transform: scale(1.1); }
+
+/*-------------------------------------------------
+Contact-forms
+-------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+.footer-container {
+  width: 100%;
+  height: 700px;
+  background-image: url(../../../img/bg%20footer.png); }
+  .footer-container h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 118px; }
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 118px; }
+  .social__item {
+    font-size: 24px;
+    padding: 0 20px; }
+    .social__item .fa {
+      color: white; }
+    .social__item .fa:hover {
+      background-color: gold; }
+
+.form {
+  width: 100%; }
+  .form__text--name {
+    width: 600px;
+    height: 50px;
+    float: left;
+    text-align: center; }
+    .form__text--name .form__input__name {
+      width: 300px;
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      border: none;
+      border-bottom: 2px solid silver;
+      margin-left: 380px;
+      color: #ffffff;
+      background-color: transparent; }
+
+.form__text--email {
+  width: 300px;
+  height: 50px;
+  float: right;
+  margin-right: 350px; }
+  .form__text--email .form__input__email {
+    width: 300px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px; }
+
+.form__text--message {
+  width: 700px;
+  height: 60px;
+  clear: both;
+  padding-left: 380px; }
+  .form__text--message .text-area {
+    width: 620px;
+    height: 60px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    resize: none;
+    padding-top: 30px; }
+
+.form__btn {
+  height: 50px;
+  display: block;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+  border: 3px solid silver;
+  margin: auto;
+  cursor: pointer;
+  transform: scale(1); }
+
+.form__btn:hover {
+  background-color: gold;
+  transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */

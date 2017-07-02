@@ -1,4 +1,5 @@
 .menu {
+    width: 800px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
@@ -13,7 +14,7 @@
 	&__link {
     font-size: $menu-fs;
     font-family: $main-font-family;
-    color: $black-color;
+    color: $white-color;
 		font-weight: 700;
 		text-decoration: none;
 		text-transform: uppercase;

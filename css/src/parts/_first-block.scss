@@ -1,0 +1,35 @@
+.f-block {
+    width: 1350px;
+    height: 600px;
+    font-family: $main-font-family;
+    
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    
+    .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    
+    p {
+        letter-spacing: 1px;
+        color:$black-color;
+    }
+    
+    &__flex__elements {
+        transform: scale(1);
+        
+        &:hover {
+        transform: scale(1.1);
+            
+        }
+    }
+    }
+}
